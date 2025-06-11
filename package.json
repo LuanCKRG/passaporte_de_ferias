@@ -1,0 +1,23 @@
+{
+  "name": "passaporte_de_ferias",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+   "scripts": {
+    "build:css": "tailwindcss -i src/styles.css -o dist/styles.css --minify",
+    "watch:css": "tailwindcss -i src/styles.css -o dist/styles.css --watch",
+    "build:js": "tsc",
+    "watch:js": "tsc --watch",
+    "build": "npm run build:css && npm run build:js",
+    "dev": "npm run watch:css & npm run watch:js & npm run serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@tailwindcss/cli": "^4.1.8",
+    "tailwindcss": "^4.1.8",
+    "typescript": "^5.8.3"
+  }
+}
